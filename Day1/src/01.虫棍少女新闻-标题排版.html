@@ -1,0 +1,115 @@
+<!-- 文档类型为HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 字符集为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 设置浏览器兼容性 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虫棍少女：真的超级有品</title>
+    <!-- 方式二：内嵌样式 -->
+    <style>
+        /* css选择器 
+            元素选择器  选标签 <h1> h1{}
+            id选择器 定义标签id 同一页面id不可重复<h1 id="hid"> #hid{}
+            类选择器 定义标签class 同一页面class可重复<h1 class="cls"> .cls{}
+            优先级：id>类>元素*/
+        h1 {
+            /* 选取颜色的三种方式 */
+            /* 1.英文单词表示 */
+            /* 2.rgb(,,)红绿蓝取值范围0-255 */
+            /* 3.十六进制表示法，#开头，将rgb转为16进制。注意每种颜色重复可以缩写，例如#00aa66可#06 */
+            color: dimgray;
+        }
+
+        /* span{ */
+        /* color: #f00; */
+        /* } */
+
+        .cls {
+            color: #fb0101;
+            font-size: 20px;
+        }
+
+        a {
+            color: black;
+            /* text-decoration: 规定文本的修饰，none表示标准文本 */
+            text-decoration: none;
+        }
+
+        p {
+            text-indent: 35px;
+            /* 段落的首行缩进 */
+            line-height: 35px;
+            /* 设置行高 */
+        }
+
+        #title {
+            text-align: center;
+            /* 设置内容对齐方式 */
+        }
+
+        #center{
+            width: 65%;
+            margin: 0 auto; 
+        }
+    </style>
+    <!-- 方式三：外联样式 -->
+    <!-- <link rel="stylesheet" href="css/news.css"> -->
+</head>
+
+<body>
+    <div id="center">
+        <!-- img标签： -->
+        <!-- src:图片资源路径 -->
+        <!-- width：宽度 -->
+        <!-- height:高度 -->
+        <!-- <img src="./image/chonggun.jpg" width="300px"> -->
+        <!-- <img src="./image/chonggun.jpg" width="80%"> -->
+        <!-- 路径书写方式 -->
+        <!-- 绝对路径 -->
+        <!-- 绝对磁盘路径 -->
+        <!-- 绝对网络路径 -->
+        <!-- 相对路径 -->
+        <!-- ./：代表当前目录，可以省略 -->
+        <!-- ../：代表上一级目录，不能省略 -->
+        <!--     超链接 -->
+        <!--         标签<a> -->
+        <!--         属性 -->
+        <!--             href:指定资源访问的url -->
+        <!--             target:指定在何处打开资源 _self默认值，当前页打开   _blank空白页打开 -->
+        <img src="./image/chonggun.jpg" width="2%"> <a href="https://github.com/" target="_blank">虫棍少女超级有品</a>
+
+        <!-- 方式一：行内样式 -->
+        <!-- <h1 style="color: dimgrey;">虫棍少女：真的超级有品</h1>  -->
+
+        <h1 id="title">虫棍少女：真的超级有品</h1>
+
+        <hr><!-- 表示换行，换几行就有几个hr -->
+        <!-- span:无意义的行标签 -->
+        <span>虫棍少女超级</span><span class="cls">有品</span>
+        <hr>
+
+        <!-- 正文 -->
+        <!-- 视频 -->
+        <video src="video/1.mp4" controls width="100%"></video><!-- controls:显示播放控件 -->
+        <hr>
+        <!-- 音频 -->
+        <audio src="audio/Prog Monster - Void (Radio Edit).flac" controls></audio>
+        <!-- 段落 -->
+        <p>
+            虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女
+            超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品
+            虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女
+            超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品虫棍少女超级有品
+        </p>
+        <!-- 注意，无论HTML中输入多少空格，只会显示一个。可以使用空格占位符：&nbsp -->
+        <p>
+            虫棍少女<b>真的</b>超级有品<!-- <b>表示加粗，和<strong>一致 -->
+        </p>
+    </div>
+</body>
+
+</html>

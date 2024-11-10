@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS引入方式</title>
+    <!-- 内部脚本 -->
+     <script>
+        window.alert('Hello JS');
+        document.write('Hello js');
+        console.log("Hello Js");
+     </script>
+     <!-- 外部脚本 -->
+      <script src="JS/demo.js"></script>
+      <script>
+        var a=20;
+        a="gs";
+        alert(a);
+      </script>
+</head>
+<body>
+    <script>
+        alert(
+            'Hello JS'
+        )
+     </script>
+     <script>
+        var a=10
+        alert(a=="10")
+        alert(a==="10")
+        alert(a===10)
+        alert(parseInt("12"));//12
+        alert(parseInt("12A45"));//12
+        alert(parseInt("A45"));//NaN
+        if(0){
+            alert("0=false")
+        }
+        function add(a,b){
+            return a+b;
+        }
+        var c=add(10,20)
+        alert(c)
+        var mulpliy=function(a,b){
+            return a-b;
+        }
+        var d =mulpliy(20,10)
+        alert(d)
+     </script>
+</body>
+</html>
+<script>
+    alert(
+        'Hello JS'
+    )
+ </script>
