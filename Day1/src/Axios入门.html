@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/axios.js"></script>
+    <script src="JS/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <table border="1px",cellspacing="0",width="600px">
+            <tr>
+                <th>编号</th>
+                <th>性别</th>
+                <th>图像</th>
+                <th>性别</th>
+                <th>职位</th>
+                <th>入职日期</th>
+                <th>最后操作时间</th>
+            </tr>
+            <tr v-for="user in users" align="center">
+                <td>{{user.id}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            users:[],
+        },
+        mounted() {
+            axios.get(url).then((result) => {
+            this.users=result.data.data    
+        })
+        },
+    })
+    
+</script>
+</html>
