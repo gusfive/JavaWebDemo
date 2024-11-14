@@ -1,13 +1,16 @@
 <template>
-  <div id="app">
-    <element-view></element-view>
+  <div>
+    <!-- <element-view></element-view> -->
+     <!-- <emp-view></emp-view> -->
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
-import ElementView from './views/element/ElementView.vue'
+// import EmpView from './views/tlias/EmpView.vue'
+// import ElementView from './views/element/ElementView.vue'
 export default {
-  components:{ ElementView },
+  // components:{EmpView /* ElementView */ },
 }
 </script>
 
